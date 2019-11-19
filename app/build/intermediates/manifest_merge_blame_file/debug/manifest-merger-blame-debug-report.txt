@@ -1,0 +1,148 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.safety"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->E:\Safety\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\Safety\app\src\main\AndroidManifest.xml
+10
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the 'MyLocation' functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->E:\Safety\app\src\main\AndroidManifest.xml:11:5-79
+16-->E:\Safety\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->E:\Safety\app\src\main\AndroidManifest.xml:12:5-67
+17-->E:\Safety\app\src\main\AndroidManifest.xml:12:22-64
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->E:\Safety\app\src\main\AndroidManifest.xml:13:5-69
+18-->E:\Safety\app\src\main\AndroidManifest.xml:13:22-66
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->E:\Safety\app\src\main\AndroidManifest.xml:14:5-77
+19-->E:\Safety\app\src\main\AndroidManifest.xml:14:22-74
+20    <uses-permission android:name="android.permission.SEND_SMS" />
+20-->E:\Safety\app\src\main\AndroidManifest.xml:15:5-67
+20-->E:\Safety\app\src\main\AndroidManifest.xml:15:22-64
+21
+22    <!-- Include required permissions for Google Maps API to run. -->
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+28
+29    <application
+29-->E:\Safety\app\src\main\AndroidManifest.xml:17:5-58:19
+30        android:name="com.example.safety.App"
+30-->E:\Safety\app\src\main\AndroidManifest.xml:19:9-28
+31        android:allowBackup="true"
+31-->E:\Safety\app\src\main\AndroidManifest.xml:18:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.1.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/download"
+34-->E:\Safety\app\src\main\AndroidManifest.xml:20:9-40
+35        android:label="@string/app_name"
+35-->E:\Safety\app\src\main\AndroidManifest.xml:21:9-41
+36        android:roundIcon="@mipmap/download"
+36-->E:\Safety\app\src\main\AndroidManifest.xml:22:9-45
+37        android:supportsRtl="true"
+37-->E:\Safety\app\src\main\AndroidManifest.xml:23:9-35
+38        android:testOnly="true"
+39        android:theme="@style/AppTheme" >
+39-->E:\Safety\app\src\main\AndroidManifest.xml:24:9-40
+40        <service
+40-->E:\Safety\app\src\main\AndroidManifest.xml:26:9-29:47
+41            android:name="com.example.safety.BackService"
+41-->E:\Safety\app\src\main\AndroidManifest.xml:27:13-40
+42            android:enabled="true"
+42-->E:\Safety\app\src\main\AndroidManifest.xml:28:13-35
+43            android:exported="true" />
+43-->E:\Safety\app\src\main\AndroidManifest.xml:29:13-36
+44        <!--
+45             The API key for Google Maps-based APIs is defined as a string resource.
+46             (See the file "res/values/google_maps_api.xml").
+47             Note that the API key is linked to the encryption key used to sign the APK.
+48             You need a different API key for each encryption key, including the release key that is used to
+49             sign the APK for publishing.
+50             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+51        -->
+52        <meta-data
+52-->E:\Safety\app\src\main\AndroidManifest.xml:38:9-40:55
+53            android:name="com.google.android.geo.API_KEY"
+53-->E:\Safety\app\src\main\AndroidManifest.xml:39:13-58
+54            android:value="@string/google_maps_key" />
+54-->E:\Safety\app\src\main\AndroidManifest.xml:40:13-52
+55
+56        <activity
+56-->E:\Safety\app\src\main\AndroidManifest.xml:42:9-44:59
+57            android:name="com.example.safety.MapsActivity"
+57-->E:\Safety\app\src\main\AndroidManifest.xml:43:13-41
+58            android:label="@string/title_activity_maps" />
+58-->E:\Safety\app\src\main\AndroidManifest.xml:44:13-56
+59        <activity
+59-->E:\Safety\app\src\main\AndroidManifest.xml:45:9-48:59
+60            android:name="com.example.safety.CallingActivity"
+60-->E:\Safety\app\src\main\AndroidManifest.xml:46:13-44
+61            android:label="@string/title_activity_calling"
+61-->E:\Safety\app\src\main\AndroidManifest.xml:47:13-59
+62            android:theme="@style/AppTheme.NoActionBar" />
+62-->E:\Safety\app\src\main\AndroidManifest.xml:48:13-56
+63        <activity android:name="com.example.safety.MainActivity" >
+63-->E:\Safety\app\src\main\AndroidManifest.xml:49:9-55:20
+63-->E:\Safety\app\src\main\AndroidManifest.xml:49:19-47
+64            <intent-filter>
+64-->E:\Safety\app\src\main\AndroidManifest.xml:50:13-54:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->E:\Safety\app\src\main\AndroidManifest.xml:51:17-69
+65-->E:\Safety\app\src\main\AndroidManifest.xml:51:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->E:\Safety\app\src\main\AndroidManifest.xml:53:17-77
+67-->E:\Safety\app\src\main\AndroidManifest.xml:53:27-74
+68            </intent-filter>
+69        </activity>
+70        <activity android:name="com.example.safety.ServiceActivity" />
+70-->E:\Safety\app\src\main\AndroidManifest.xml:56:9-53
+70-->E:\Safety\app\src\main\AndroidManifest.xml:56:19-50
+71        <activity android:name="com.example.safety.ShakeActivity" />
+71-->E:\Safety\app\src\main\AndroidManifest.xml:57:9-51
+71-->E:\Safety\app\src\main\AndroidManifest.xml:57:19-48
+72        <!-- Needs to be explicitly declared on P+ -->
+73        <uses-library
+73-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+74            android:name="org.apache.http.legacy"
+74-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+75            android:required="false" />
+75-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\1b9026f860ab6935418a182675a0a44a\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+76
+77        <activity
+77-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\e91790921c910b5c0de2045e813ad59c\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+78            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+78-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\e91790921c910b5c0de2045e813ad59c\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+79            android:exported="false"
+79-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\e91790921c910b5c0de2045e813ad59c\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+80            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\e91790921c910b5c0de2045e813ad59c\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+81
+82        <meta-data
+82-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\ed8e441bbf5412a748a0b8e8a492f165\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+83            android:name="com.google.android.gms.version"
+83-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\ed8e441bbf5412a748a0b8e8a492f165\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+84            android:value="@integer/google_play_services_version" />
+84-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\shuba\.gradle\caches\transforms-2\files-2.1\ed8e441bbf5412a748a0b8e8a492f165\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+85    </application>
+86
+87</manifest>
